@@ -31,7 +31,7 @@ function create_article(json) {
     name.textContent = json.show.name;
     link.href = json.show.url;
     link.textContent = json.show.url.toString();
-    image.src = json.show.image ? json.show.image.medium ? json.show.image.medium : "https://via.placeholder.com/210x295?text=Not%20Found" : "https://via.placeholder.com/210x295?text=Not%20Found";
+    image.src = json.show.image ? json.show.image.medium ? json.show.image.medium : "https://placehold.co/210x295?text=Not%20Found" : "https://placehold.co/210x295?text=Not%20Found";
     image.alt = json.show.name;
     summary.innerHTML = json.show.summary;
 
